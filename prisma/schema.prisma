@@ -13,3 +13,5 @@ model highscores {
   score Int
   name  String
 }
+
+binaryTargets = ["linux-arm-openssl-1.1.x"]
