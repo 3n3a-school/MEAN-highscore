@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "build": "yarn run tsc",
+    "build": "npm run tsc",
     "tsc": "tsc --project tsconfig.compile.json",
     "tsc:w": "tsc --project tsconfig.json -w",
     "start": "tsnd --inspect --ignore-watch node_modules --respawn --transpile-only -r tsconfig-paths/register src/index.ts",
@@ -40,12 +40,16 @@
     "method-override": "^3.0.0"
   },
   "devDependencies": {
+    "@types/compression": "^1.7.1",
+    "@types/cookie-parser": "^1.4.2",
+    "@types/cors": "^2.8.12",
     "@types/koa": "^2.13.4",
     "@types/koa__cors": "^3.0.3",
     "@types/koa__router": "^8.0.7",
     "@types/koa-bodyparser": "^4.3.3",
     "@types/koa-compress": "^4.0.3",
     "@types/koa-json": "^2.0.20",
+    "@types/method-override": "^0.0.32",
     "@types/multer": "^1.4.7",
     "@types/node": "^16.6.1",
     "prisma": "^2.29.1",
