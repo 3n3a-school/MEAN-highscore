@@ -39,6 +39,11 @@ export class UsersController {
   @Summary("Return a list of User")
   @(Returns(200, Array).Of(hsModel))
   getUsers() {
-    return this.prisma.highscores.findMany();
+    return this.prisma.highscores.findMany({
+      take: 10,
+      orderBy: {
+        score: 'desc',
+      },
+    });
   }
 }
